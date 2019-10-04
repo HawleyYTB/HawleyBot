@@ -8,7 +8,7 @@ client = discord.Client()
 async def on_ready():
     print(client.user.id)
     print("ready")
-    game = discord.Game("!도와줘를 입력하세요!")
+    game = discord.Game("아심심해")
     await client.change_presence(status=discord.Status.online, activity=game)
 
 
@@ -25,7 +25,6 @@ async def on_message(message):
         await message.channel.send("솔직히 말하자면 우리 반에서 제일 찐따고 못생겼고 울보인 애.")
     if message.content.startswith("!악마Hawley봇은?"):
         await message.channel.send("https://discord.gg/CVXRzmC")
-    if message.content.startswith("!사진")
 
 
 access_token = os.environ["BOT_TOKEN"]
